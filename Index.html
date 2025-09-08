@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S Varsha - Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #f8bbd0, #ba68c8); /* 🌸 pink-purple gradient */
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #f8bbd0, #8e24aa);
+      color: #4a0072;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2.5rem; font-weight: bold; }
+    header p { font-size: 1.2rem; color: #333; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.3rem 0.6rem;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    nav a:hover { background: rgba(255,255,255,0.2); }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 { margin-bottom: 1rem; color: #6a1b9a; text-align: center; }
+
+    .card, ul li {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card:hover { transform: translateY(-5px); transition: 0.3s; }
+
+    ul { list-style: none; padding: 0; }
+
+    footer {
+      background: #4a0072;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+    button {
+      background: #8e24aa;
+      color: #fff;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover { background: #6a1b9a; }
+  </style>
+</head>
+<body>
+
+  <!-- ====== HEADER ====== -->
+  <header>
+    <h1>S Varsha</h1>
+    <p>BCA Department | MMES Women’s Arts and Science College, Melvisharam</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ====== ABOUT ====== -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>Hello! I am <strong>S Varsha</strong>, a BCA student at MMES Women’s Arts and Science College, Melvisharam.  
+      I am passionate about programming, web development, and exploring new technologies.</p>
+    </div>
+  </section>
+
+  <!-- ====== PROJECTS ====== -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio created using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="card">
+        <h3>Student Management System</h3>
+        <p>A mini project to manage student records using database connectivity.</p>
+      </div>
+      <div class="card">
+        <h3>Calculator App</h3>
+        <p>A simple calculator built with JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== HOBBIES ====== -->
+  <section id="hobbies">
+    <h2>My Hobbies</h2>
+    <div class="grid">
+      <div class="card"><h3>💃 Dancing</h3><p>I love expressing myself through different dance forms.</p></div>
+      <div class="card"><h3>🍳 Cooking</h3><p>I enjoy experimenting with recipes and making delicious dishes.</p></div>
+      <div class="card"><h3>🎤 Singing</h3><p>Singing helps me relax and brings joy to my daily life.</p></div>
+    </div>
+  </section>
+
+  <!-- ====== SKILLS ====== -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li>💻 Web Development (HTML, CSS, JavaScript)</li>
+      <li>🖥️ Programming in C / C++ / Java</li>
+      <li>🗄️ Database Management (SQL, MySQL)</li>
+      <li>🎨 Creativity & Problem Solving</li>
+      <li>🤝 Teamwork and Communication</li>
+    </ul>
+  </section>
+
+  <!-- ====== EDUCATION ====== -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>BCA</strong> – MMES Women’s Arts and Science College, Melvisharam (2022–2025, Pursuing)</li>
+      <li><strong>12th Grade</strong> – Completed with Computer Science stream</li>
+      <li><strong>10th Grade</strong> – Successfully completed with good academic results</li>
+    </ul>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:varsha@example.com">varsha@example.com</a></p>
+      <button onclick="showMessage()">Say Hello 👋</button>
+      <p id="msg"></p>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <p>&copy; 2025 S Varsha | All rights reserved.</p>
+  </footer>
+
+  <!-- ====== JAVASCRIPT ====== -->
+  <script>
+    function showMessage() {
+      document.getElementById("msg").innerText = "Hello! Thanks for visiting my portfolio 🌸";
+    }
+  </script>
+
+</body>
+</html>
